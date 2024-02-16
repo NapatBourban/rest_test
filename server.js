@@ -22,4 +22,7 @@ app.get('/books/:id', (req, res) => {
 app.listen(3000, () => {
   console.log('http://localhost:3000')
 })
+app.post('/books', (req, res) => {
+    books.push(req.body)
+  })
 
